@@ -1,0 +1,43 @@
+{
+    "name": "alexandreeduardocardoso/youtube-login",
+    "description": "login",
+    "authors": [
+        {
+            "name": "Alexandre Cardoso",
+            "email": "alecar2007@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^5.3",
+        "league/plates": "^3.4",
+        "ext-pdo": "*",
+        "phpmailer/phpmailer": "^6.5",
+        "vlucas/phpdotenv": "^5.3",
+        "doctrine/inflector": "^2.0"
+    },
+    "autoload": {
+        "files":[
+            "app/helpers/flash.php",
+            "app/helpers/redirect.php",
+            "app/helpers/sessao.php",
+            "app/database/connect.php",
+            "app/database/fetch.php",
+            "app/database/create.php",
+            "app/database/paginate.php",
+            "app/router/router.php",
+            "app/helpers/constants.php",
+            "app/helpers/helpers.php",
+            "app/helpers/old.php",
+            "app/helpers/csrf.php",
+            "app/helpers/validate.php",
+            "app/helpers/email.php",
+            "app/database/update.php",
+            "app/database/delete.php",
+            "app/database/search.php",
+            "app/helpers/image.php"
+        ],
+        "psr-4": {
+            "app\\":"app"
+        }
+    }
+}
